@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Student List</h1>
+<a href="{{ url_for('add_student') }}">Add New Student</a>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Email</th>
+    </tr>
+    {% for student in students %}
+    <tr>
+        <td>{{ student.id }}</td>
+        <td>{{ student.first_name }}</td>
+        <td>{{ student.last_name }}</td>
+        <td>{{ student.dob }}</td>
+        <td>{{ student.email }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

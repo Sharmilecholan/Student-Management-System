@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h1>Add New Student</h1>
+    <form method="POST">
+        <label>First Name:</label><input type="text" name="first_name" required><br>
+        <label>Last Name:</label><input type="text" name="last_name" required><br>
+        <label>Date of Birth:</label><input type="date" name="dob" required><br>
+        <label>Email:</label><input type="email" name="email" required><br>
+        <button type="submit">Add Student</button>
+    </form>
+</div>
+{% endblock %}
+

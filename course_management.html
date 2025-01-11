@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Course Management</h1>
+<a href="{{ url_for('add_course') }}">Add New Course</a>
+<table>
+    <tr>
+        <th>Course ID</th>
+        <th>Course Name</th>
+        <th>Credits</th>
+    </tr>
+    {% for course in courses %}
+    <tr>
+        <td>{{ course.course_id }}</td>
+        <td>{{ course.course_name }}</td>
+        <td>{{ course.credits }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

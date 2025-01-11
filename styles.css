@@ -1,0 +1,235 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color for contrast */
+    color: #333; /* Dark text for readability */
+}
+
+/* Welcome Message Section */
+.welcome-message {
+    background-color: #143601; /* Your preferred color */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.welcome-message h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navigation Bar (above About Us Section) */
+nav {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px; /* Adds space below the nav */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #143601; /* Hover effect with your primary color */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.about-us h3 {
+    color: #143601;
+    font-size: 28px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Dashboard Section */
+.dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.stat-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    text-align: center;
+}
+
+.stat-card h4 {
+    margin-bottom: 10px;
+    color: #143601;
+    font-size: 22px;
+}
+
+.stat-card p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #143601;
+}
+
+/* Button Styling for Submit/Actions */
+button {
+    padding: 12px 25px;
+    background-color: #143601;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #125b00; /* Darker shade on hover */
+}
+
+/* Styling for Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #143601; /* Matching navigation bar color */
+    color: white;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+td:hover {
+    background-color: #f1f1f1; /* Hover effect on rows */
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Fields */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container input[type="date"],
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #143601;
+    outline: none;
+}
+
+/* Submit Button Styling */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #143601;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #125b00; /* Darker shade on hover */
+}
+
+/* Optional: Error styles */
+.form-container .error {
+    border-color: red;
+}
+
+.form-container .error-message {
+    color: red;
+    font-size: 12px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

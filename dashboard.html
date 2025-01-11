@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- New Section: About Us -->
+<div class="about-us">
+    <h3>About Us</h3>
+    <p>
+        At Student Management System, we are committed to providing an intuitive platform that simplifies the management of student data. Our system offers seamless tools for tracking academic performance, attendance, and personal information, ensuring that both educators and students have easy access to critical data. Designed with user-friendly features, our platform aims to enhance administrative efficiency and communication. Whether you're an institution or a student, we strive to offer a reliable, secure, and accessible solution. Join us in transforming the way education is managed and experienced!
+    </p>
+</div>
+
+<!-- Dashboard Section -->
+<div class="dashboard">
+    <h1>Dashboard</h1>
+    <div class="stats">
+        <div class="stat-card">
+            <h4>Total Students</h4>
+            <p>{{ total_students }}</p>
+        </div>
+        <div class="stat-card">
+            <h4>Total Courses</h4>
+            <p>{{ total_courses }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

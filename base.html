@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Welcome Message Section -->
+    <div class="welcome-message">
+        <h2>Welcome to the Student Management System</h2>
+        <p>Your one-stop solution for efficient and streamlined academic administration!</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('student_list') }}">Students</a></li>
+            <li><a href="{{ url_for('course_management') }}">Courses</a></li>
+        </ul>
+    </nav>
+
+    <!-- Container for the page content -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
